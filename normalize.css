@@ -7,6 +7,13 @@
 }
 @font-face {
 
+ font-family: 'Ubuntu-light';
+
+ src: url(./fonts/Ubuntu/Ubuntu-Light.ttf);
+
+}
+@font-face {
+
  font-family: 'Lifehack';
 
  src: url(./fonts/Lifehack Medium.otf);
@@ -44,6 +51,17 @@ div.sect_2 {
     background-color:white;
     
     min-height:650px;    
+}
+div.sect_photo {
+    display:flex; 
+    justify-content:center;
+    background-color:white;
+    min-height:650px;    
+}
+
+.container {
+    width:1100px;
+    max-width:1100px;
 }
 
 div.sect_1 div#content { 
@@ -88,7 +106,7 @@ height: 11px;
 
 color: #ffffff;
 
-font-family: Ubuntu;
+font-family: Ubuntu-Medium;
 
 font-size: 13px;
 
@@ -131,7 +149,24 @@ div.btn_order_orange {
     text-align:center;
     padding-top:3px;
 }
-div.btn_order_orange span {
+div.pht-block__btn-gray {
+    background:url(./design/btn_gray.png) no-repeat;
+    width: 113px;
+    height: 38px;
+    text-align:center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+div.pht-block__btn-gray span {
+  font-size: 13px;
+  font-family: 'Ubuntu-Medium';
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+
+.btn_order_orange span {
     width: 66px;
     height: 9px;
     color: #ffffff;
@@ -144,7 +179,7 @@ div.btn_order_orange span {
 
 div#content .menu li a {   
     text-decoration: none;
-    font-family: Ubuntu;
+    font-family: Ubuntu-Medium;
     font-size: 13px;
     font-weight: 500;
     line-height: 30px;
@@ -293,11 +328,56 @@ div#content .menu li a:hover {
     margin-top:15px;
    padding-top:10px; 
   font-size: 14px;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu-Medium";
   color: rgba(47, 50, 52, 0.8);
   line-height: 1.714;
   text-align: center;
  opacity:0.8;
 
+}
+.params-inline {
+    display:inline-flex;
+    flex-wrap: wrap;
+    max-width:1100px;
+}
 
+.pht-block {
+    width:275px;
+    height:325px;
+}
+.pht-block__info{
+    min-width:275px;
+ 
+}
+.pht_block__content {   
+    position:absolute;
+    z-index:2;
+    max-width:240px;
+    padding-left:20px;
+}
+.pht-block__name { 
+  padding-top:40px;
+  padding-bottom:14px;    
+  font-size: 14px;
+  font-family: "Gagalin";
+  color: rgb(255, 255, 255);
+  line-height: 2.008;
+  text-align: left;
+  -moz-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+  -webkit-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+  -ms-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+
+}
+.pht-block__text {
+  font-size: 14px;
+  font-family: 'Ubuntu-light';
+  color: rgb(255, 255, 255);
+  line-height: 1.714;
+    padding-bottom:15px;
+
+}
+.pht-block__img {
+    position:absolute;
+    border:0;
+    z-index:1;
 }
