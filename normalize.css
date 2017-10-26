@@ -1,0 +1,303 @@
+@font-face {
+
+ font-family: 'Ubuntu-Medium';
+
+ src: url(./fonts/Ubuntu/Ubuntu-Medium.ttf);
+
+}
+@font-face {
+
+ font-family: 'Lifehack';
+
+ src: url(./fonts/Lifehack Medium.otf);
+
+}
+@font-face {
+
+ font-family: 'Gagalin';
+
+ src: url(./fonts/Gagalin/Gagalin-Regular.otf);
+
+}
+* {
+ margin: 0;
+ padding: 0;
+}
+ 
+body {
+ width: 100%;
+ height: 100%;
+ 
+}
+
+div.sect_1 {
+    display:flex;
+    justify-content: center;
+    background-color:black;
+    
+    min-height:649px;    
+}
+
+div.sect_2 {
+    display:flex;
+    justify-content: center;
+    background-color:white;
+    
+    min-height:650px;    
+}
+
+div.sect_1 div#content { 
+    width:1100px;
+    min-height:650px;
+    background: url(./design/sec_1-video-bg.png) no-repeat center center fixed;
+    background-size: cover;
+    height:100%;
+}
+
+div.sect_2 div#content {   
+    width:1100px;
+    min-height:650px;
+    background: url(./design/sec_2-bg.png) no-repeat;
+}
+
+div.head {
+    display:flex;
+}
+div#content div.logo {
+    width: 400px;
+}
+div#content div.logo img {
+    padding-top:12px;
+    padding-left:77px;
+    width: 92px;
+    height: 69px;
+}
+div#content div.menu {
+   height:11px;
+    /*width: 510px;   
+    height: 11px;
+    */
+    color: #ffffff;
+}
+div#content .menu ul {
+    margin-left: -10px;
+    margin-top:30px;
+width: 510px;
+
+height: 11px;
+
+color: #ffffff;
+
+font-family: Ubuntu;
+
+font-size: 13px;
+
+font-weight: 500;
+
+line-height: 30px;
+
+text-transform: uppercase;
+   
+    
+    
+}
+div#content .menu li {
+    display: inline-block;
+    
+   
+}
+
+
+div#content .menu ul li:not(:last-child)::after { 
+  content: "";
+  margin:0 10px;
+  display: inline-block;
+  list-style: none;
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 2px;
+
+}
+
+
+div.btn_order_orange {
+    background:url(./design/btn_orange.png) no-repeat;
+    width: 100px;
+    height: 38px;
+    margin-top:27px;
+    margin-left:-30px;
+    text-align:center;
+    padding-top:3px;
+}
+div.btn_order_orange span {
+    width: 66px;
+    height: 9px;
+    color: #ffffff;
+    font-family: Ubuntu-Medium;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+div#content .menu li a {   
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    color:white;
+}
+div#content .menu li a:hover {
+    text-decoration:underline;
+}
+.burger {
+    margin-top:-10px;
+    margin-left:95px;
+    width: 451px;
+    height: 420px;
+    background:url(./design/drops.png) no-repeat;
+}
+.content {
+    display:flex;
+}
+.burger_txt{
+    display:flex;
+    flex-direction:column;
+    justify-content:left;
+    
+   max-width:415px;
+  font-size: 72px;
+  font-family: "Gagalin";
+  color: rgb(249, 180, 59);
+  line-height: 1.181;
+  text-align: left;
+  -moz-transform: matrix( 1.00073354323579,0,0,0.99971888136576,0,0);
+  -webkit-transform: matrix( 1.00073354323579,0,0,0.99971888136576,0,0);
+  -ms-transform: matrix( 1.00073354323579,0,0,0.99971888136576,0,0);
+
+}
+.burger_txt div {
+   
+    font-family: 'Lifehack';
+    font-size:65px;
+    width:415px;
+    color:white;
+}
+.middle_text {
+    display:flex;
+    align-items:center;
+    padding-left:10px;
+    height:451px;
+}
+.cheese-dip {
+    position:absolute;
+    margin-top:26px;
+    width: 152px;
+    height: 316px;
+    background:url(./design/cheese-dip.png);
+}
+.lettuce {
+    position:absolute;
+    margin-left:922px;
+    margin-top:53px;
+    background:url(./design/-0011-lettuce-r.png);
+    width: 177px;
+    height: 365px;
+}
+.tomato {
+    position:absolute;
+    margin-left:57px;
+    margin-top:526px;
+    background:url(./design/-0019-tomato-r.png);
+    width: 381px;
+    height: 125px;
+}
+.q2a {
+    position:absolute;
+    margin-left:596px;
+    margin-top:364px;
+    background:url(./design/q2a.png);
+    width: 504px;
+    height: 287px;
+    z-index:1;
+}
+.tomato-3 {
+    position:absolute;
+    margin-left:906px;
+    margin-top:505px;
+    background:url(./design/tomato-3.png);
+    width: 194px;
+    height: 145px;
+    z-index:2;
+}
+.we-header {
+  padding-top:78px;
+  font-size: 71.713px;
+  font-family: "Gagalin";
+  color: rgb(47, 50, 52);
+  line-height: 0.889;
+  text-align: center;
+  -moz-transform: matrix( 1.00024500727088,0,0,1.00399880848613,0,0);
+  -webkit-transform: matrix( 1.00024500727088,0,0,1.00399880848613,0,0);
+  -ms-transform: matrix( 1.00024500727088,0,0,1.00399880848613,0,0);
+}
+
+.we {
+    display:flex;  
+    justify-content:center;
+    padding-top:88px;
+}
+.we__block {
+    display: :flex;
+    width:300px;
+    margin-left:10px;
+    
+}
+.we__meat {
+    display:flex;
+    width: 97px;
+    height: 89px;
+    background: url(./design/meat.png) no-repeat;
+    
+}
+.we__hand {
+    width: 73px;
+    height: 89px;
+    background: url(./design/hand.png) no-repeat;
+    
+}
+.we__natural {
+    width: 88px;
+    height: 89px;
+    background: url(./design/natural.png) no-repeat;
+    
+}
+.we__head-content {
+  padding-top:30px;
+  font-size: 24px;
+  font-family: "Lifehack";
+  color: rgb(47, 50, 52);
+  line-height: 1.167;
+  text-align: center;
+  -moz-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+  -webkit-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+  -ms-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+   max-height:55px;
+
+}
+.we__text {
+    margin-top:15px;
+   padding-top:10px; 
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgba(47, 50, 52, 0.8);
+  line-height: 1.714;
+  text-align: center;
+ opacity:0.8;
+
+
+}
