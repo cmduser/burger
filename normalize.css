@@ -58,7 +58,9 @@ div.sect_photo {
     background-color:white;
     min-height:650px;    
 }
-
+.wedo__right-block ul{
+    color: #ffffff;
+}
 .container {
     width:1100px;
     max-width:1100px;
@@ -67,7 +69,7 @@ div.sect_photo {
 div.sect_1 div#content { 
     width:1100px;
     min-height:650px;
-    background: url(./design/sec_1-video-bg.png) no-repeat center center fixed;
+    background: url(./design/sec_1-video-bg.png)  center center fixed;
     background-size: cover;
     height:100%;
 }
@@ -77,7 +79,11 @@ div.sect_2 div#content {
     min-height:650px;
     background: url(./design/sec_2-bg.png) no-repeat;
 }
-
+.arrow_bottom {
+    display:flex;
+    justify-content:center;
+    margin-top:55px;
+}
 div.head {
     display:flex;
 }
@@ -380,4 +386,7 @@ div#content .menu li a:hover {
     position:absolute;
     border:0;
     z-index:1;
+}
+.wedo__right-block {
+    margin-left:40px;
 }
