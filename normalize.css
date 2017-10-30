@@ -37,12 +37,44 @@ body {
  
 }
 
+.button {
+
+    width:100%;
+    height:36px;
+    border-radius: 4px;
+    
+}
+.button-bg-orange {
+    background-color: #e45028;
+    border:1px solid #e45028;
+}
+.button-bg-gray {
+    background-color: #2f3234;
+    border:1px solid #2f3234;
+}
+.wedo__order {
+    width:98px;
+    margin-top:25px;
+    margin-left:-30px;
+    padding-top:3px;
+}
+.button {
+    font-family: 'Ubuntu-Medium';
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+
+
+.txt-white {
+    color:white;
+}
 div.sect_1 {
     display:flex;
     justify-content: center;
     background-color:black;
-    
-    min-height:649px;    
+    min-height:649px; 
+    height: 100vh;
 }
 
 div.sect_2 {
@@ -61,6 +93,36 @@ div.sect_photo {
 .wedo__right-block ul{
     color: #ffffff;
 }
+/*
+.numberCircle {
+
+    
+    display:inline-block;
+    border-radius:50%;
+    border:2px solid;
+
+    font-size:10px;
+    
+}
+
+.numberCircle:before,
+.numberCircle:after {
+    content:'\200B';
+    display:inline-block;
+    line-height:0px;
+
+    padding-top:50%;
+    padding-bottom:50%;
+}
+
+.numberCircle:before {
+    padding-left:8px;
+}
+.numberCircle:after {
+    padding-right:8px;
+}
+*/
+
 .container {
     width:1100px;
     max-width:1100px;
@@ -69,7 +131,7 @@ div.sect_photo {
 div.sect_1 div#content { 
     width:1100px;
     min-height:650px;
-    background: url(./design/sec_1-video-bg.png)  center center fixed;
+    background: url(./design/sec_1-video-bg.png) no-repeat  center center fixed;
     background-size: cover;
     height:100%;
 }
@@ -84,26 +146,26 @@ div.sect_2 div#content {
     justify-content:center;
     margin-top:55px;
 }
-div.head {
+.wedo__head {
     display:flex;
 }
-div#content div.logo {
+.wedo__logo {
     width: 400px;
 }
-div#content div.logo img {
+.wedo__logo img {
     padding-top:12px;
     padding-left:77px;
     width: 92px;
     height: 69px;
 }
-div#content div.menu {
+.wedo__menu {
    height:11px;
     /*width: 510px;   
     height: 11px;
     */
     color: #ffffff;
 }
-div#content .menu ul {
+.wedo__menu ul {
     margin-left: -10px;
     margin-top:30px;
 width: 510px;
@@ -125,14 +187,14 @@ text-transform: uppercase;
     
     
 }
-div#content .menu li {
+.wedo__menu li {
     display: inline-block;
     
    
 }
 
 
-div#content .menu ul li:not(:last-child)::after { 
+.wedo__menu ul li:not(:last-child)::after { 
   content: "";
   margin:0 10px;
   display: inline-block;
@@ -144,8 +206,20 @@ div#content .menu ul li:not(:last-child)::after {
   margin-bottom: 2px;
 
 }
+.wedo__menu li a {   
+    text-decoration: none;
+    font-family: Ubuntu-Medium;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    color:white;
+}
+.wedo__menu li a:hover {
+    text-decoration:underline;
+}
 
-
+/*
 div.btn_order_orange {
     background:url(./design/btn_orange.png) no-repeat;
     width: 100px;
@@ -172,29 +246,19 @@ div.pht-block__btn-gray span {
 }
 
 
+
 .btn_order_orange span {
     width: 66px;
     height: 9px;
     color: #ffffff;
-    font-family: Ubuntu-Medium;
+    font-family: 'Ubuntu-Medium';
     font-size: 13px;
     font-weight: 500;
     line-height: 30px;
     text-transform: uppercase;
 }
+*/
 
-div#content .menu li a {   
-    text-decoration: none;
-    font-family: Ubuntu-Medium;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 30px;
-    text-transform: uppercase;
-    color:white;
-}
-div#content .menu li a:hover {
-    text-decoration:underline;
-}
 .burger {
     margin-top:-10px;
     margin-left:95px;
@@ -379,7 +443,7 @@ div#content .menu li a:hover {
   font-family: 'Ubuntu-light';
   color: rgb(255, 255, 255);
   line-height: 1.714;
-    padding-bottom:15px;
+   padding-bottom:15px;
 
 }
 .pht-block__img {
@@ -389,4 +453,15 @@ div#content .menu li a:hover {
 }
 .wedo__right-block {
     margin-left:40px;
+}
+
+
+
+.pht-block__more {
+    width:110px;
+}
+
+.wedo {
+   display:flex;
+   align-items:center;
 }

@@ -1,0 +1,159 @@
+.wedo {
+  background-image: url('../design/bg/wedo-bg.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+}
+.header__logo {
+    margin-top:12px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.nav {
+  margin-right: rem(15px);
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  &:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: ' ';
+    @include circle(4px, #fff);
+    margin: 0 12px;
+  }
+  &:last-child:after {
+    display: none;
+  }
+}
+.wedo__right {
+    display:flex;
+    align-items:flex-end;
+}
+.nav__item-block {
+  display: block;
+  vertical-align: middle;
+  white-space: nowrap;
+ padding-bottom: 15px;
+  &:after {
+    display: block;
+    vertical-align: top;
+    content: ' ';
+    @include circle(7px, #fff);
+   
+  }
+
+}
+
+.nav__circle {
+  position:absolute;
+   opacity:0;
+  margin-left:-11.4px; 
+  margin-top:-12px;    
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  transform: scale(0.5);
+  transition: all 700ms ease-in-out;
+  color: #444;
+  line-height:100px;
+  vertical-align:middle;
+  text-align:center;
+  font-size:2em;
+  border:1px solid white;
+ 
+  &:hover {
+    opacity:1;  
+     transition: all 800ms ease-in;
+    transform: scale(0.7);
+  }
+}
+
+.nav__link {
+  font-family: 'Ubuntu-Medium';    
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 2.308;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .5s;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.wedo__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wedo__content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+  padding-bottom: 15%;
+}
+
+.wedo__img, .wedo__description {
+  flex-basis: 50%;
+  display: flex;
+}
+.right__block {
+position:absolute;
+    margin-left:18px;
+    margin-top:50px;
+}
+
+.wedo__description {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title {
+  color: #f9b43b;
+  font-family: 'Gagalin';
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1.42;
+  margin: 0;
+  padding-top: 60px;
+}
+
+.wedo__description-text {
+  color: #ffffff;
+  font-family: 'Lifehack';
+  font-size: 65px;
+  font-weight: 500;
+  line-height: 1;
+}
+.header__btn {
+    max-height: 36px;
+}
+.wedo__arrow-bottom {
+    padding-bottom: 55px;
+}

@@ -1,0 +1,88 @@
+.we {
+  background-image: url('../design/bg/we-bg.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.we__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.we__info {
+     display:flex; 
+     justify-content:center;
+     padding-top:88px;
+    
+}
+.we__header {
+  margin:0;
+  padding-top:rem(75px);
+  font-size: 71.713px;
+  font-family: "Gagalin";
+  color: rgb(47, 50, 52);
+  line-height: 0.889;
+  text-align: center;
+  -moz-transform: matrix( 1.00024500727088,0,0,1.00399880848613,0,0);
+  -webkit-transform: matrix( 1.00024500727088,0,0,1.00399880848613,0,0);
+  -ms-transform: matrix( 1.00024500727088,0,0,1.00399880848613,0,0);
+}
+.we__block {
+    width:300px;
+    margin-left:20px;
+    &:first-child {
+        margin-left:0px;
+    }
+    
+    
+}
+.we__meat {
+    
+  
+    height: 89px;
+    background: url(../design/meat.png) no-repeat;
+    background-position: center top;
+    
+}
+.we__hand {
+    
+    height: 89px;
+    background: url(../design/hand.png) no-repeat;
+    background-position: center top;
+    
+}
+.we__natural {
+    height: 89px;
+    background: url(../design/natural.png) no-repeat;
+    background-position: center top;
+    
+}
+.we__head-content {
+    
+  padding-top:30px;
+  padding-bottom:12px;
+  font-size: 24px;
+  font-family: "Lifehack";
+  color: rgb(47, 50, 52);
+  line-height: 1.167;
+  text-align: center;
+  -moz-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+  -webkit-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+  -ms-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+  
+
+}
+.we__text {
+  font-size: 14px;
+  font-family: "Ubuntu-Light";
+  color: rgba(47, 50, 52, 0.8);
+  line-height: 1.714;
+  text-align: center;
+ opacity:0.8;
+
+}

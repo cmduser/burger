@@ -1,103 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <script src="./js/prefixfree.min.js" type="text/javascript"></script>
-	<link rel="stylesheet" type="text/css" href="normalize.css">
+      <meta charset="utf-8">
+    <title>Home page</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
  </head>
 
 <body>
-    
-        <div class="sect_1">
-            <div id="content" class="wedo">
-               <div class="head">
-                    <div class="logo">
-                        <img src="./design/logo.png" border="0" />
-                    </div>
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#" onclick="return false;">О нас</a></li>
-                            <li><a href="#" onclick="return false;">Бургеры</a></li>
-                            <li><a href="#" onclick="return false;">Команда</a></li>
-                            <li><a href="#" onclick="return false;">Меню</a></li>
-                            <li><a href="#" onclick="return false;">Отзывы</a></li>
-                            <li style=" list-style: none;"><a href="#" onclick="return false;">Контакты</a></li>
-                        </ul>
-                    </div>  
-                    <div class="btn_order_orange">
+    <div class="wrapper">
+        <div class="maincontent">
+            <section class="section wedo">
+                <h2 class="el-hide">section We do</h2>
+                <div class="container wedo__container">
+                       <header class="header">
+                           <div class="header__logo"><a class="logo" href="#"><img class="logo__img"  src="./design/logo.png" alt='logo' /></a></div>
+                            <div class="header__menu">
+                                        <nav class="nav">
+                                          <ul class="nav__list">
+                                            <li class="nav__item"><a class="nav__link" href="" data-goto="1">о нас</a>
+                                            </li>
+                                            <li class="nav__item"><a class="nav__link" href="" data-goto="2">бургеры</a>
+                                            </li>
+                                            <li class="nav__item"><a class="nav__link" href="" data-goto="3">команда</a>
+                                            </li>
+                                            <li class="nav__item"><a class="nav__link" href="" data-goto="4">меню</a>
+                                            </li>
+                                            <li class="nav__item"><a class="nav__link" href="" data-goto="5">отзывы</a>
+                                            </li>
+                                            <li class="nav__item"><a class="nav__link" href="" data-goto="7">контакты</a>
+                                            </li>
+                                          </ul>
+                                        </nav>
+                               
+                            </div> 
+                           <div class="header__btn">
+                               <a class="order-link order-link_orange" href="" data-goto="6">Заказать</a>
+                           </div>
+                           
+                         <!--  <div class="wedo__order"><button class="button button__bg-orange txt-white">Заказать</button></div>-->
+                        <div style="wedo__right">              
+                        <div class='right__block'>
+                                
+                                 <nav class="nav">
+                                          <ul class="nav__list">
+                                              <li class="nav__item-block"><div class="nav__circle"></div></li>
+                                              <li class="nav__item-block"><div class="nav__circle"></div></li>
+                                              <li class="nav__item-block"><div class="nav__circle"></div></li>
+                                              <li class="nav__item-block"><div class="nav__circle"></div></li>
+                                              <li class="nav__item-block"><div class="nav__circle"></div></li>
+                                              <li class="nav__item-block"><div class="nav__circle"></div></li>
+                                              <li class="nav__item-block"><div class="nav__circle"></div></li>
+                                              <li class="nav__item-block"><div class="nav__circle"></div></li>
+                                              
+                                </ul>
+                                </nav>
+                            </div>  
+                        </div>  
+                  
+                        </header>
+                        
+       
+                        <div class="wedo__content">
+                          <div class="wedo__img"><img src="./design/drops.png" alt="drops"></div>
+                          <div class="wedo__description">
+                            <h2 class="section__title">Мы делаем</h2>
+                            <div class="wedo__description-text">натуральные бургеры</div>
+                          </div>
+     
+                        </div>
 
-                        <span>Заказать</span>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="burger"></div>
-                    <div class="middle_text">
-                    <div class="burger_txt">
-                        Мы делаем 
-                        <div>натуральные бургеры</div>
-                    </div>
-                    </div>
-                    <div class='wedo__right-block'>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-                    <div class="arrow_bottom">
-                    <img src="./design/arrow-scroll.png" border="0">
-                </div>
-            </div>    
-        </div>
-        
-        <div class="sect_2">
-            <div id="content">
-                <div class="cheese-dip"></div>
-                <div class="lettuce"></div>
-                <div class="tomato"></div>
-                <div class="q2a"></div>
-                <div class="tomato-3"></div>
-                <div class="we-header">Мы лучшие</div>
-                <main class="page">
-                    <div class="we">
                         
-                        <div class="we__block" align="center">
-                            <div class="we__meat"></div>
-                            <div class="we__head-content">100% свежее мясо</div>
-                            <div class="we__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
-                            
+                        <div class="wedo__arrow-bottom">
+                            <img src="./design/arrow-scroll.png" alt="scroll">
                         </div>
-                        
-                        <div class="we__block" align="center">
-                            <div class="we__hand"></div>
-                            <div class="we__head-content">Ручная сборка</div>
-                            <div class="we__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+
+                       
+
+                     
+                </div>
+            </section>
+            <section class="section we">
+              <div class="container we__container">
+                    <h2 class="we__header">Мы лучшие</h2>
+                                           
+                    
+                        <div class="we__info">
+
+                            <div class="we__block">
+                                <div class="we__meat"></div>
+                                <div class="we__head-content">100% свежее мясо</div>
+                                <div class="we__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+
+                            </div>
+
+                            <div class="we__block">
+                                <div class="we__hand"></div>
+                                <div class="we__head-content">Ручная сборка</div>
+                                <div class="we__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+                            </div>
+
+                            <div class="we__block">
+                                <div class="we__natural"></div>
+                                <div class="we__head-content">Натуральные ингредиенты</div>
+                                <div class="we__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+                            </div>
+
                         </div>
-                        
-                        <div class="we__block" align="center">
-                            <div class="we__natural"></div>
-                            <div class="we__head-content">Натуральные ингредиенты</div>
-                            <div class="we__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
-                        </div>
-                        
-                    </div>
-                </main>
-                
-            </div>
-        </div>  
+                                     
+                    
+                  </div>
+            </section>
     
-        <div class="sect_photo"> 
-            <div class="container params-inline">
+        <section class="section pht">
+            <h2 class="el-hide">section Users reviews</h2>
+              <div class="container pht__container"> 
+                
                 <div class="pht-block">
-                    <img src="./photo/photo-1458890715264-db84f7c6ef13.png">
+                    <div class="pht-block__info">
+                        <div class="pht_block__content">
+                            <div class="pht-block__name">Константин Спилберг</div>
+                            <div class="pht-block__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                            <div class="pht-block__more"><a class="order-link order-link_dark" href="" data-goto="7">Подробнее</a></div>
+                          
+                        </div>                                         
+                    </div>
+                    <img src="./photo/photo-1458890715264-db84f7c6ef13.png" class="pht-block__img" alt="photo">
+                    <div class="pht-block__overlay"></div>
                 </div>
                 <div class="pht-block">
                     
@@ -105,20 +139,96 @@
                         <div class="pht_block__content">
                             <div class="pht-block__name">Константин Спилберг</div>
                             <div class="pht-block__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                            <div class="pht-block__btn-gray"><span>Подробнее</span></div>
-                        </div>
-                        <img src="./photo/photo-1440606797942-6cc04c045447.png" class="pht-block__img">
-                    
+                            <div class="pht-block__more"><a class="order-link order-link_dark" href="" data-goto="7">Подробнее</a></div>
+                          
+                        </div>                                         
                     </div>
+                     
+                     <img src="./photo/photo-1440606797942-6cc04c045447.png" class="pht-block__img" alt="photo">
+                     <div class="pht-block__overlay"></div>
+                  
                 </div>
-                        <div class="pht-block"><img src="./photo/photo-1445404590072-16ef9c18bd83.png"></div>
-                        <div class="pht-block"><img src="./photo/photo-1468546818829-25bb337b6646.png"></div>
-                        <div class="pht-block"><img src="./photo/photo-1438763298591-75a0d42b7265.png"></div>
-                        <div class="pht-block"><img src="./photo/photo-1461332682233-b818af4c3a6e.png"></div>
-                        <div class="pht-block"><img src="./photo/photo-1457706924510-773f3c796de3.png"></div>
-                        <div class="pht-block"><img src="./photo/photo-1458696765561-12142eaead13.png"></div> 
-                </div>
-            </div>
+                <div class="pht-block">
+                            <div class="pht-block__info">
+                                <div class="pht_block__content">
+                                    <div class="pht-block__name">Константин Спилберг</div>
+                                    <div class="pht-block__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                    <div class="pht-block__more"><a class="order-link order-link_dark" href="" data-goto="7">Подробнее</a></div>
+
+                                </div>                                         
+                            </div>
+                            <img src="./photo/photo-1445404590072-16ef9c18bd83.png" class="pht-block__img" alt="photo">
+                            <div class="pht-block__overlay"></div>
+                            
+                  </div>
+                        <div class="pht-block">
+                         <div class="pht-block__info">
+                            <div class="pht_block__content">
+                                <div class="pht-block__name">Константин Спилберг</div>
+                                <div class="pht-block__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                <div class="pht-block__more"><a class="order-link order-link_dark" href="" data-goto="7">Подробнее</a></div>
+
+                            </div>                                         
+                        </div>
+                            <img src="./photo/photo-1468546818829-25bb337b6646.png" class="pht-block__img" alt="photo">
+                            <div class="pht-block__overlay"></div>
+                        </div>
+                        <div class="pht-block">
+                         <div class="pht-block__info">
+                            <div class="pht_block__content">
+                                <div class="pht-block__name">Константин Спилберг</div>
+                                <div class="pht-block__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                <div class="pht-block__more"><a class="order-link order-link_dark" href="" data-goto="7">Подробнее</a></div>
+
+                            </div>                                         
+                        </div>
+                            <img src="./photo/photo-1438763298591-75a0d42b7265.png" class="pht-block__img" alt="photo">
+                            <div class="pht-block__overlay"></div>
+                        </div>
+                        <div class="pht-block">
+                         <div class="pht-block__info">
+                            <div class="pht_block__content">
+                                <div class="pht-block__name">Константин Спилберг</div>
+                                <div class="pht-block__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                <div class="pht-block__more"><a class="order-link order-link_dark" href="" data-goto="7">Подробнее</a></div>
+
+                            </div>                                         
+                        </div>
+                            <img src="./photo/photo-1461332682233-b818af4c3a6e.png" class="pht-block__img" alt="photo">
+                            <div class="pht-block__overlay"></div>
+                        </div>
+                        <div class="pht-block">
+                         <div class="pht-block__info">
+                            <div class="pht_block__content">
+                                <div class="pht-block__name">Константин Спилберг</div>
+                                <div class="pht-block__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                <div class="pht-block__more"><a class="order-link order-link_dark" href="" data-goto="7">Подробнее</a></div>
+
+                            </div>                                         
+                        </div>                          
+                            <img src="./photo/photo-1457706924510-773f3c796de3.png" class="pht-block__img" alt="photo">
+                            <div class="pht-block__overlay"></div>
+                        </div>
+                        <div class="pht-block">
+                         <div class="pht-block__info">
+                            <div class="pht_block__content">
+                                <div class="pht-block__name">Константин Спилберг</div>
+                                <div class="pht-block__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                <div class="pht-block__more"><a class="order-link order-link_dark" href="" data-goto="7">Подробнее</a></div>
+
+                            </div>
+                             
+                        </div>
+                            
+                            <img src="./photo/photo-1458696765561-12142eaead13.png" class="pht-block__img" alt="photo">
+                            <div class="pht-block__overlay"></div>
+                        </div>       
+                  
+            </div>      
+        </section>
+            
+    </div>
+  </div>
         
 </body>
 </html>

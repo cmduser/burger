@@ -1,0 +1,114 @@
+.pht {
+  position: relative;
+  background-size: cover;
+}
+.pht__container {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width:100%;
+    height:100%;
+    
+}
+
+
+.pht-block {
+    display:flex;
+    position:relative;
+    margin:0;
+    padding:0;
+   // min-width:275px;
+    min-height:325px;
+    width:25%;
+    height:50%;
+    &:hover .pht-block__overlay {
+
+      opacity:0.7;
+      //z-index:1;
+    }
+
+    &:hover .pht-block__info {
+        opacity:1;
+    
+    }
+}
+.pht-block__overlay {
+      content: " ";
+      display: block;
+      position:absolute;
+      margin:auto;
+      bottom:0;           
+      top: 0;   
+      
+        width: 100%;
+        height:100%;
+      background: #141414;
+    opacity:0;   
+    -webkit-transition:$OverlayTime;
+    -moz-transition:$OverlayTime;
+    -o-transition:$OverlayTime;
+    -ms-transition:$OverlayTime;
+    transition:$OverlayTime;
+      z-index:1;
+    }
+.pht-block__info{
+    position:absolute;
+    margin:0;
+    padding:0;
+    max-width:25%;
+    height:50%;
+    z-index:2;
+    opacity:0;   
+    -webkit-transition: $OverlayTime;
+    -moz-transition: $OverlayTime;
+    -o-transition: $OverlayTime;
+    -ms-transition: $OverlayTime;
+    transition: $OverlayTime;
+
+ 
+}
+
+
+.pht-block__img {
+    width:100%;
+    height:100%;
+   // min-width:275px;
+    min-height:325px;
+    border:0;
+    z-index:1;
+}
+
+.pht_block__content {   
+    
+    min-width:230px;
+    padding-left:20px;
+
+}
+.pht-block__name { 
+  padding-top:40px;
+  padding-bottom:14px;    
+  font-size: 14px;
+  font-family: "Gagalin";
+  color: rgb(255, 255, 255);
+  line-height: 2.008;
+  text-align: left;
+  -moz-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+  -webkit-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+  -ms-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+
+}
+.pht-block__text {
+  position:relative;
+
+  font-size: 14px;
+  font-family: 'Ubuntu-Light';
+  color: rgb(255, 255, 255);
+  line-height: 1.714;
+  padding-bottom:15px;
+
+}
+
+
+.pht-block__more {
+    width:110px;
+}

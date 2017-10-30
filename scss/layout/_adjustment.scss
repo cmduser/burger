@@ -1,0 +1,58 @@
+.wrapper {
+  width: 100%; 
+  height: 100%;
+  position: relative;
+}
+
+.maincontent {
+  height: 100%;
+  min-height: 650px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section {
+  height: 100%;
+  background-color: rgba(0,0,0,0.31);
+  min-width: 940px;
+  min-height: 650px;
+}
+
+.order-link {
+ font-family: 'Ubuntu-Medium';
+  min-width: rem(98px);
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  
+  line-height: 2.308;
+  text-transform: uppercase;
+  transition: .5s;
+
+}
+.order-link_orange {
+    background-color: $orange;
+    
+    &:hover {
+        background-color: darken($orange, 7%);
+    }
+}
+.order-link_dark {
+    background-color: $dark;
+    
+    &:hover {
+        background-color: darken($dark, 7%);
+    }
+}
+.el-hide {
+    display:none;
+}
