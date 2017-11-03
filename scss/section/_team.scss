@@ -1,0 +1,245 @@
+.team {
+  background-image: url('../design/bg/team-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+}
+.team__container {    
+    height:100%;
+    width:100%;
+    justify-content: start;
+    align-items: flex-end;
+}
+.team__block-right {
+    display:flex;
+    align-items:center;
+    width:48%;
+    height:100%;
+    position:absolute;
+}
+.team__content {
+    display:flex;
+    margin-left:rem(60px);
+    flex-direction:column;
+
+    color:black;
+    z-index:20;
+}
+.team__title {
+  padding-left:rem(20px);
+  font-size: rem(72px);
+  font-family: "Gagalin";
+  color: rgb(249, 180, 59);
+  line-height: 0.889;
+  text-align: left;
+}
+
+.navperson {
+  margin-right: rem(15px);
+  
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+    
+    &__item {
+      display:flex;
+      padding-bottom:rem(35px);
+      flex-direction: column;
+      vertical-align: middle;
+      font-size: rem(14px);
+      font-family: "Gagalin";
+      color: rgb(255, 255, 255);
+      line-height: 2.008;
+      text-align: left;
+      -moz-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+      -webkit-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+      -ms-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+        
+       &_active .navperson__content {
+          overflow: visible;
+          height: auto;
+          position: relative;
+          display:flex;
+          align-items: center;
+      
+        }
+        
+        &_active .navperson__name{
+          color:#f9b43b;
+        }
+        
+        &_hidden .triangle {
+          position:relative;
+          width: rem(10px); 
+          height: rem(6px); 
+          margin-right:rem(10px);
+          border-left: rem(5px) solid transparent;
+          border-right: rem(5px) solid transparent;
+
+          border-bottom: rem(5px) solid orange;
+        }
+        
+        &_active .triangle{
+          content: '';
+          width: rem(10px); 
+          height: rem(6px); 
+          margin-right:rem(10px);
+          border-left: rem(5px) solid transparent;
+          border-right: rem(5px) solid transparent;
+
+
+          border-top: rem(5px) solid orange;    
+        }
+        
+    }
+
+}
+
+
+/*
+.navperson__item {
+  display:flex;
+    padding-bottom:35px;
+  flex-direction: column;
+  vertical-align: middle;
+  font-size: 14px;
+  font-family: "Gagalin";
+  color: rgb(255, 255, 255);
+  line-height: 2.008;
+  text-align: left;
+  -moz-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+  -webkit-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+  -ms-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
+  &:hover .navperson__content {
+        overflow: visible;
+        height: auto;
+      position: relative;
+      display:flex;
+      align-items: center;
+      
+    }
+  &:hover .navperson__name{
+        color:#f9b43b;
+    }   
+    
+  &:hover .triangle {
+     
+      content: '';
+        width: 10px; 
+        height: 6px; 
+      margin-right:10px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+  
+      
+      border-top: 5px solid orange;
+      
+  }
+ &:not(:hover) .triangle {
+  position:relative;
+  width: 10px; 
+  height: 6px; 
+  margin-right:10px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-bottom: 5px solid orange;
+}
+}
+
+ .navperson__item_active .navperson__content {
+        overflow: visible;
+        height: auto;
+      position: relative;
+      display:flex;
+      align-items: center;
+      
+    }
+  .navperson__item_active .navperson__name{
+        color:#f9b43b;
+    }   
+
+.navperson__item_hidden .triangle {
+  position:relative;
+  width: 10px; 
+  height: 6px; 
+  margin-right:10px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-bottom: 5px solid orange;
+}
+.navperson__item_active .triangle{
+      content: '';
+      width: 10px; 
+      height: 6px; 
+      margin-right:10px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+  
+      
+      border-top: 5px solid orange;
+    
+}
+*/
+.navperson__descr {
+  max-width:rem(230px);    
+  font-size: rem(14px);
+  font-family: 'Ubuntu-Light';
+  color: rgb(255, 255, 255);
+  line-height: 1.714;
+  padding-left:rem(20px);
+
+
+}
+.navperson__stuff {
+    @extend .navperson__descr;
+    font-weight: bold;
+}
+.navperson__name {
+display:flex;
+    flex-direction: row;
+    align-items: center; 
+    flex-basis: 50%;
+}
+
+
+.navperson__content {
+    overflow: hidden;
+    height:0px;
+
+}
+
+.navperson__img {
+    border-radius: 50%;
+}
+.navperson__pic {
+    background-image: url(../photo/team/aphex.jpg);
+    margin-left:rem(20px);
+    height: rem(100px);
+    min-width: rem(100px);
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+  
+}
+
+.team__block-overlay {
+    display:flex;
+    top:0;
+    bottom:0;
+    position:absolute;
+    width:100%;
+    heigt:100%;
+    margin:auto;
+    background-color: #2f3234;
+    opacity: 0.93;
+    z-index:2;
+}
+.team__acordeon {
+    
+    position:relative;
+}
+ 

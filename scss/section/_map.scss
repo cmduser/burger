@@ -1,0 +1,94 @@
+.map {
+  background-image: url('../design/bg/map-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  position:relative;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $black;
+	background-image: url('../images/bg/footer-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: rem(60px);
+    
+    &__container {
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+    }
+}
+.footer__contacts {
+    display:flex;
+    flex-direction: column;
+  //  border:1px solid white;
+    padding-left:6.5%;
+  //  padding-left:rem(80px);
+}
+
+.footer__adress {
+   
+  font-size: rem(14px);
+  font-family: "Ubuntu-Light";
+  color: rgb(255, 255, 255);
+  line-height: 1.714;
+  text-align: left;
+    
+
+}
+
+.footer__contacts, .footer__socials {
+  //border:1px solid white;
+  flex-basis: 50%;
+}
+.footer__socials {
+    display:inline-block;
+    padding-right:6.5%;
+    text-align: right;
+}
+
+.footer__phone-num {
+    
+  font-size: rem(14px);
+  font-family: "Ubuntu";
+  color: #e45028;
+  line-height: 1.714;
+  text-align: left;
+
+}
+
+.footer__phone-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: rem(7px);
+  fill: #e45028;
+  width: rem(12px);
+  height: rem(12px);
+  margin-bottom: rem(5px);    
+}
+
+.footer__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: rem(10px);
+  fill: #595959;
+  width: rem(25px);
+  height: rem(25px);
+  &:hover {
+    fill: $white;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+
+}
+

@@ -1,0 +1,139 @@
+.slidemenu {
+  background-image: url('../design/bg/menu-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  position:relative;
+}
+.slidemenu-accor__content {
+	background-color: rgba($dark, .93);
+	width: 0px;
+	overflow: hidden;
+	flex-shrink: 0;
+	position: relative;
+}
+.slidemenu-accor {
+	display: flex;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+    justify-content: flex-end;
+
+	&__item {
+		display: flex;
+        &:hover .slidemenu-accor__content{
+            overflow: visible;
+            width:rem(540px);
+        }
+        /*
+        &--active .slidemenu-accor__content {
+			overflow: visible;
+            width:540px;
+        }
+        */
+		&--active .slidemenu-accor__title {
+			color: $yellow;
+		}
+        
+	}
+}
+
+.slidemenu-accor__desc {
+    padding:30px;
+	font-size: rem(14px);
+	color: $white;
+	line-height: 1.7;
+}
+.slidemenu-accor__trigger {
+	text-decoration: none;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: rem(80px);
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(#141414, .7);
+	}
+
+	&_meat {
+		background-image: url('../design/meat-m.jpg');
+	}
+
+	&_vegan {
+		background-image: url('../design/vegan-m.jpg');
+	}
+
+	&_diet {
+		background-image: url('../design/diet-m.jpg');
+	}
+}
+
+.slidemenu-accor__title {
+	font-family: "Gagalin";
+	font-size: rem(40px);
+	line-height: 1;
+	color: $white;
+	text-transform: uppercase;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%) rotate(-90deg);
+	white-space: nowrap;
+
+}
+
+
+
+.slidemenu__container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+// flex-wrap: wrap;
+  align-items: flex-start;
+  color:#fff;
+}
+.section__title {
+    
+
+}
+.section__title_slidemenu {
+  position:absolute;
+  top: 13%;
+  left: 9%; 
+  font-size: rem(72px);
+  font-family: "Gagalin";
+  line-height: 0.889;
+  -moz-transform: matrix( 1.00024500727088,0,0,1.00399880848613,0,0);
+  -webkit-transform: matrix( 1.00024500727088,0,0,1.00399880848613,0,0);
+  -ms-transform: matrix( 1.00024500727088,0,0,1.00399880848613,0,0);
+  color:$white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
