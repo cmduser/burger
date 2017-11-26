@@ -22,11 +22,11 @@
 
 	&__item {
 		display: flex;
-        &:hover .slidemenu-accor__content{
+       /* &:hover .slidemenu-accor__content{
             overflow: visible;
             width:rem(540px);
         }
-        /*
+        
         &--active .slidemenu-accor__content {
 			overflow: visible;
             width:540px;
@@ -117,6 +117,9 @@
   -webkit-transform: matrix( 1.00024500727088,0,0,1.00399880848613,0,0);
   -ms-transform: matrix( 1.00024500727088,0,0,1.00399880848613,0,0);
   color:$white;
+    @include phones {
+        font-size:rem(50px);
+    }
 }
 
 

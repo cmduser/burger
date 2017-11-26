@@ -10,6 +10,7 @@
     width:100%;
     justify-content: start;
     align-items: flex-end;
+    max-width: 100%;
 }
 .team__block-right {
     display:flex;
@@ -17,6 +18,12 @@
     width:48%;
     height:100%;
     position:absolute;
+    
+    @include tablets {
+        width:100%;
+       // display: flex;
+        justify-content: center;
+    }
 }
 .team__content {
     display:flex;
@@ -63,11 +70,24 @@
           position: relative;
           display:flex;
           align-items: center;
+           
+           @include tablets {
+               flex-direction: column;
+               justify-content: center;
+           } 
       
         }
         
         &_active .navperson__name{
           color:#f9b43b;
+
+        }
+        & .navperson__name {
+            cursor: pointer;
+                        @include tablets {
+                display: flex;
+                justify-content: center;
+            }
         }
         
         &_hidden .triangle {
@@ -92,6 +112,12 @@
 
           border-top: rem(5px) solid orange;    
         }
+        @include tablets {
+
+            text-align: center;
+            justify-content: center;
+            width:100%;
+        }    
         
     }
 

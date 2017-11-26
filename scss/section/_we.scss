@@ -8,7 +8,7 @@
   align-items: center;
 }
 .we__container {
-  height: 100%;
+  height:100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17,13 +17,18 @@
 .we__info {
      display:flex; 
      justify-content:center;
-     padding-top:88px;
+     padding-top:rem(88px);
+     
+    @include phones {
+        flex-direction: column;
+    
+    }
     
 }
 .we__header {
   margin:0;
   padding-top:rem(75px);
-  font-size: 71.713px;
+  font-size: rem(72px);
   font-family: "Gagalin";
   color: rgb(47, 50, 52);
   line-height: 0.889;
@@ -33,44 +38,67 @@
   -ms-transform: matrix( 1.00024500727088,0,0,1.00399880848613,0,0);
 }
 .we__block {
-    width:300px;
-    margin-left:20px;
+
+    //width:33%;
+   // max-width:rem(300px);
+    margin-left:rem(20px);
     &:first-child {
         margin-left:0px;
+        
     }
+    @include phones {
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+		margin-bottom: 0;
+		margin-right: rem(20px);
+        text-align: left;
+	}
     
     
 }
 .we__meat {
+    dislpay:flex;
+    text-align:center;
     
-  
-    height: 89px;
-    background: url(../design/meat.png) no-repeat;
+    
+  //  width: 100%;
+  //  height: 89px;
     background-position: center top;
+    min-width: rem(97px);
+    @include phones {
+        margin-left:rem(20px);
+       // margin-right:rem(10px);
+    }
     
 }
 .we__hand {
-    
-    height: 89px;
-    background: url(../design/hand.png) no-repeat;
+    dislpay:flex;
+    text-align:center;
+   // height: 89px;
+  //  background: url(../design/hand.png) no-repeat;
     background-position: center top;
+    min-width: rem(97px);
     
 }
 .we__natural {
-    height: 89px;
-    background: url(../design/natural.png) no-repeat;
+    dislpay:flex;
+    text-align:center;
+   // height: 89px;
+   // background: url(../design/natural.png) no-repeat;
     background-position: center top;
+    min-width: rem(97px);
     
 }
 .we__head-content {
     
-  padding-top:30px;
-  padding-bottom:12px;
-  font-size: 24px;
+  padding-top:rem(30px);
+  padding-bottom:rem(12px);
+  font-size: rem(24px);
   font-family: "Lifehack";
   color: rgb(47, 50, 52);
   line-height: 1.167;
-  text-align: center;
+ // text-align: center;
   -moz-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
   -webkit-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
   -ms-transform: matrix( 0.99883262359814,0,0,1.00409157252179,0,0);
@@ -78,11 +106,22 @@
 
 }
 .we__text {
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: "Ubuntu-Light";
   color: rgba(47, 50, 52, 0.8);
   line-height: 1.714;
-  text-align: center;
+  //text-align: center;
  opacity:0.8;
 
+}
+.we__block-content {
+    text-align: center;
+    @include phones {
+        text-align: left;
+        padding-left:rem(20px);
+    }
+}
+.we__img {
+  max-width: 100%;
+  max-height:100%;    
 }

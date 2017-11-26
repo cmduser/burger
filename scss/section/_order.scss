@@ -5,7 +5,13 @@
   background-size: cover;
   position:relative;
 }
+.order__container {
+    @include tablets {
+       /* max-height:100vh;*/
+        max-width:90%;
+    }
 
+}
 .order__title {
     
   font-size: rem(72px);
@@ -13,6 +19,12 @@
   color: rgb(249, 180, 59);
   line-height: 0.889;
   text-align: center;
+    @include tablets {
+        font-size: rem(62px);
+    }
+    @include phones {
+        font-size: rem(50px);
+    }
 }
 
 
@@ -21,25 +33,34 @@
     font-size:rem(14px);
   color: #fff;
   padding-bottom:rem(18px);
+    @include phones {
+        padding-bottom: 0;
+    }
 }
 
 .form__input {
   border: none;
   border-radius: 5px;
-  padding: 5px;
+  padding: rem(5px);
   width: 100%;
 }
 .form__textarea {
   border: none;
   border-radius: 5px;
-  padding: 5px;
+  padding: rem(5px);
   width: 100%;
   height:rem(115px);
+    @include phones {
+        height:auto;
+    }
 }
 
 .form__row {
   display: flex;
   margin-bottom: rem(20px);
+    @include tablets {
+        margin-bottom: 0;
+    }
 }
 
 .form__block {
@@ -53,20 +74,38 @@
 .form__elem {
     display:flex;
     flex-direction: row;
+    @include tablets {
+        flex-direction: column;
+    }
 }
 .form__content-left, .form__content-right {
     display:flex;flex-basis: 50%;
     flex-flow: column;
+
+
 }
 .form__content-left {
     margin-left:rem(-10px);
+        @include tablets {
+        margin:0;
+        padding:0;
+    }
 }
 .form__content-right {
     padding-left:rem(20px);
+        @include tablets {
+        margin:0;
+        padding:0;
+    }
+    @include phones {
+        width:100%;
+        justify-content: center;
+    }
+
 }
 .form__text-radio {
     display: inline;
-     color: #fff;
+    color: #fff;
     font-family: 'Ubuntu-Light';
     font-size:rem(14px);
     padding-right:rem(10px);
@@ -76,4 +115,10 @@
     display: inline-block;
     width:rem(97px);
 }
-
+.form_block_mobile {
+    @include phones {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
