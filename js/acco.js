@@ -95,3 +95,22 @@ $(document).ready(function () {
     });
 
   })
+
+ let burgerButton = document.querySelector('.hamburger-menu-link'); 
+let tabletsMenu = document.querySelector('.menu--tablets');
+let tabletsMenuClose = document.querySelector('.menu__close');
+let menuLink = document.querySelectorAll('.menu__item');
+$(burgerButton).on('click touchstart touchend', (e) => {
+	 e.preventDefault();
+    $(tabletsMenu).toggleClass('visible');
+    $(tabletsMenu).css('position', 'fixed');
+  });
+
+$(tabletsMenuClose).on('click touchstart touchend', () => {
+  $(tabletsMenu).toggleClass('visible');
+});
+
+$(menuLink).on('click touchstart', () => {
+  $(tabletsMenu).toggleClass('visible');
+});
+  

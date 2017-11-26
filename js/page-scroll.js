@@ -17,8 +17,11 @@ $(function(){
 
 			sections.eq(sectionEq).addClass('active')
 				.siblings().removeClass('active');
-
+			
+			
 			display.css({
+				'-webkit-transition-duration' : '1s',
+				'transition-duration' : '1s',
 				'transform' : 'translate3d(0, '+ position +', 0)'
 			});
 
@@ -29,7 +32,7 @@ $(function(){
 					.siblings().removeClass('active');
 					
 
-			}, 1300)
+			}, 1000)
 		}
 
 
@@ -64,11 +67,12 @@ $(function(){
 		scrollToSection(1);
 	});
 
-	$('.fixed-menu__link, .nav__link, .order-link').on('click', function(e){
+	$('.nav__link, .nav__item-block, .order-link, .item__link').on('click', function(e){
 		e.preventDefault();
-
-		var href = parseInt($(this).attr('href'));
-
+//return alert(($(this).attr('data-scroll-to')));
+		let href = parseInt($(this).attr('data-scroll-to'));
+	//	alert(href);
+	//	return;
 		scrollToSection(href);
 
 	});

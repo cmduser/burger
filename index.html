@@ -33,24 +33,24 @@
                             <div class="header__menu">
                                         <nav class="nav">
                                           <ul class="nav__list">
-                                            <li class="nav__item"><a class="nav__link" href="" data-goto="1">о нас</a>
+                                            <li class="nav__item"><a class="nav__link" href="#" data-scroll-to="1">о нас</a>
                                             </li>
-                                            <li class="nav__item"><a class="nav__link" href="" data-goto="2">бургеры</a>
+                                            <li class="nav__item"><a class="nav__link" href="" data-scroll-to="2">бургеры</a>
                                             </li>
-                                            <li class="nav__item"><a class="nav__link" href="" data-goto="3">команда</a>
+                                            <li class="nav__item"><a class="nav__link" href="" data-scroll-to="3">команда</a>
                                             </li>
-                                            <li class="nav__item"><a class="nav__link" href="" data-goto="4">меню</a>
+                                            <li class="nav__item"><a class="nav__link" href="" data-scroll-to="4">меню</a>
                                             </li>
-                                            <li class="nav__item"><a class="nav__link" href="" data-goto="5">отзывы</a>
+                                            <li class="nav__item"><a class="nav__link" href="" data-scroll-to="5">отзывы</a>
                                             </li>
-                                            <li class="nav__item"><a class="nav__link" href="" data-goto="7">контакты</a>
+                                            <li class="nav__item"><a class="nav__link" href="" data-scroll-to="7">контакты</a>
                                             </li>
                                           </ul>
                                         </nav>
                                
                             </div> 
                            <div class="header__btn">
-                               <a class="order-link order-link_orange" href="" data-goto="6">Заказать</a> 
+                               <a class="order-link order-link_orange" href=""  data-scroll-to="6">Заказать</a> 
                                <div class="wedo__btn-wrapper">
                                <a class="hamburger-menu-link" href="">
                                     <div class="hamburger-menu-link__bars"></div>
@@ -58,6 +58,34 @@
                                </div>
                            </div>
                            
+                             
+            <div class="menu menu--tablets">
+              <div class="menu__close">
+                  <img src="./design/close-menu.svg" alt="" class="cross__pic cross__pic--menu">
+              </div>
+                <nav class="main__menu main__menu--tablets">
+                  <ul class="menu__list menu__list--tablets">
+                    <li class="menu__item menu__item--tablets">
+                      <a href="" class="item__link" data-scroll-to="1">о нас</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="item__link" data-scroll-to="2">бургеры</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="item__link" data-scroll-to="3">команда</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="item__link" data-scroll-to="4">меню</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="item__link" data-scroll-to="5">отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="item__link" data-scroll-to="7">контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
                          <!--  <div class="wedo__order"><button class="button button__bg-orange txt-white">Заказать</button></div>-->
 
                   
@@ -150,7 +178,7 @@
 											<div class="price__number">500</div>
 											<div class="price__currency">рублей</div>
                                             <div class="burgers__btn">
-											 <a class="order-link order-link_orange" href="" data-goto="7">Заказать</a>
+											 <a class="order-link order-link_orange" href="" data-scroll-to="6">Заказать</a>
                                             </div>
 										</div>
 									</div>
@@ -250,7 +278,7 @@
 											<div class="price__number">500</div>
 											<div class="price__currency">рублей</div>
 								            <div class="burgers__btn">
-											 <a class="order-link order-link_orange" href="" data-goto="7">Заказать</a>
+											 <a class="order-link order-link_orange" href="" data-scroll-to="6">Заказать</a>
                                             </div>
 										</div>
 									</div>
@@ -351,7 +379,7 @@
 											<div class="price__currency">рублей</div>
                                                                      
                                             <div class="burgers__btn">
-											 <a class="order-link order-link_orange" href="" data-goto="7">Заказать</a>
+											 <a class="order-link order-link_orange" href="" data-scroll-to="6">Заказать</a>
                                             </div>
                                             
 										</div>
@@ -737,19 +765,34 @@
                       <textarea name="comment" class="form__textarea"></textarea>
                   </div>
                 </div>
-                <div class="form__row">
-                  <div class="form__block form_block_mobile">
-                      <input type="radio" name="pay" value="cash"> <p class="form__text-radio">Потребуется сдача</p>  <input type="radio" name="pay" value="card"> <p class="form__text-radio">Оплата по карте</p>
-                    
-                    
-                  </div>
-                </div>
+                
+                <div class="form__row form__row-radio form_block_mobile">
+                <label class="form__radio">
+                  <input type="radio" name="payment" class="radio__item">
+                  <div class="radio__item-fake"></div>
+                  <span class="form__block-title form__block-title-radio">Потребуется сдача</span>
+                </label>
+                <label class="form__radio">
+                  <input type="radio" name="payment" class="radio__item" checked>
+                  <div class="radio__item-fake"></div>
+                  <span class="form__block-title form__block-title-radio">Оплата по карте</span>
+                </label>
+              </div>
+             <div class="form__row form__row-radio form_block_mobile">
+                <label class="form__radio form__radio-checkbox">
+                  <input type="checkbox" name="call" class="radio__item" checked>
+                  <div class="radio__item-fake-checkbox"></div>
+                  <span class="form__block-title form__block-title-radio">Не перезванивать</span>
+                </label>
+              </div>
+   <!--
                 <div class="form__row">
                   <div class="form__block form_block_mobile">
                     <input type="checkbox" name="call" checked> <p class="form__text-radio">Не перезванивать</p>
                       
                   </div>
                 </div>
+                 -->
                  
                 <div class="form__row form_block_mobile">
                  
