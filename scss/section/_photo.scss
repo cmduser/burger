@@ -178,3 +178,39 @@
         justify-content: center;
     }
 }
+
+.overlay__text-modal {
+  @include phones {
+    display: block;
+  }
+}
+/*fixed link*/
+.button__link {
+    cursor:pointer;
+  border-radius: 5px; 
+  display: inline-block;  
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Ubuntu-Medium", sans-serif;
+  font-size: 1vmax;
+  padding: rem(8px) rem(16px);
+
+
+}
+
+.popup {
+  display: none;
+  border-radius: 5px;  
+  @include phones {
+    width: 70vw;
+  }
+  &__layout {
+    width: 475px;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    
+  }
+}

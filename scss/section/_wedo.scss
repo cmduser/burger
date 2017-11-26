@@ -5,6 +5,10 @@
   background-size: cover;
   position: relative;
 }
+.head-fix {
+    flex-direction: column;
+    justify-content: center;
+}
 .header__logo {
     margin-top:rem(12px);
     

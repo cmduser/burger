@@ -86,3 +86,12 @@ $(document).ready(function () {
 
 
 });
+
+
+  $(function () {
+
+    $("[data-fancybox]").fancybox({
+      slideClass : 'popup__layout'
+    });
+
+  })
