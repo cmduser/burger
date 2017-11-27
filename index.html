@@ -720,40 +720,40 @@
                     <h2 class="order__title">Закажите доставку</h2>
                     
          <div class="form">
-            <form action="./" class="form__elem" >
+            <form action="./server.php" method="POST" class="form__elem" id="form">
               <div class="form__content-left">
                 <div class="form__row">
                   <div class="form__block">
                     <h3 class="form__block-title">Имя</h3>
-                    <input type="text" class="form__input">
+                    <input type="text" name="name" class="form__input">
                   </div>
                   <div class="form__block">
                     <h3 class="form__block-title">Телефон</h3>
-                    <input type="text" class="form__input">
+                    <input type="text" name="phone" class="form__input">
                   </div>
                 </div>
                 <div class="form__row">
                   <div class="form__block">
                     <h3 class="form__block-title">Улица</h3>
-                    <input type="text" class="form__input">
+                    <input type="text" name="street" class="form__input">
                   </div>
                 </div>
                 <div class="form__row">
                   <div class="form__block">
                     <h3 class="form__block-title">Дом</h3>
-                    <input type="text" class="form__input">
+                    <input type="text" name="house" class="form__input">
                   </div>
                   <div class="form__block">
                     <h3 class="form__block-title">Корпус</h3>
-                    <input type="text" class="form__input">
+                    <input type="text" name="block" class="form__input">
                   </div>
                   <div class="form__block">
                     <h3 class="form__block-title">Квартира</h3>
-                    <input type="text" class="form__input">
+                    <input type="text" name="apt" class="form__input">
                   </div>
                   <div class="form__block">
                     <h3 class="form__block-title">Этаж</h3>
-                    <input type="text" class="form__input">
+                    <input type="text" name="floor" class="form__input">
                   </div>
                 </div>
               </div>
@@ -797,7 +797,7 @@
                 <div class="form__row form_block_mobile">
                  
                             <div class="form__order-btn">
-                               <a class="order-link order-link_orange" href="" data-goto="8">Заказать</a>
+                               <button style="border:0;" class="order-link order-link_orange" >Заказать</button>
                            </div>
                             <div class="form__order-btn">
                                <a class="order-link" href="" data-goto="8">Очистить</a>

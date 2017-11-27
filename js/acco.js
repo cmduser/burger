@@ -114,3 +114,28 @@ $(menuLink).on('click touchstart', () => {
   $(tabletsMenu).toggleClass('visible');
 });
   
+  
+  $('#form').on('submit', e => {
+	 
+	e.preventDefault();
+	let form = $(e.target);
+	let url = form.attr('action'),
+	data = form.serialize();
+
+	let request = $.ajax({
+		type: 'POST',
+		url: url,
+		data: data
+	});
+	request.done(function( msg ) {
+		var obj = jQuery.parseJSON(msg);
+		
+		alert(obj.mes);
+
+	});
+	
+	request.fail(function(jqXHR, textStatus) {
+		alert("Request failed: " + textStatus);
+	});
+
+});
