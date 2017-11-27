@@ -148,6 +148,9 @@ ul {
       font-size: 0.6875rem;
       padding: 0.25rem 0.5rem; } }
 
+.order-link--fix {
+  border: 0; }
+
 .order-link_orange {
   background-color: #e25028; }
   .order-link_orange:hover {
@@ -1468,6 +1471,10 @@ ul {
     fill: #fff; }
   .footer__icon:first-child {
     margin-left: 0; }
+
+#mapz {
+  width: 100%;
+  height: 100%; }
 
 .order {
   background-image: url("../design/bg/order-bg.jpg");
